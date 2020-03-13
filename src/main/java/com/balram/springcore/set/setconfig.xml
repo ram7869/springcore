@@ -1,0 +1,23 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+	
+	<bean name="cardelar" class="com.balram.springcore.set.CarDelar">
+	<property name="name" value="MyDelar"></property>
+	<property name="models">
+	  <set>
+	  <value>C1</value>
+	   <value>C2</value>
+	    <value>C3</value>
+	     <value>C4</value>
+	  </set>
+	</property>
+	
+	</bean>
+	
+	
+</beans>

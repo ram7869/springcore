@@ -1,0 +1,33 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+	<bean name="customer" class="com.balram.springcore.map.Customer">
+
+	<property name="id">
+		<value>12</value>
+	</property>
+	<property name="products">
+		<map>
+		<entry>
+		<key><value>12</value></key>
+		<value>IPhone</value>
+		</entry>
+		<entry>
+		<key><value>13</value></key>
+		<value>Android</value>
+		</entry>
+		<entry>
+		<key><value>14</value></key>
+		<value>Android1</value>
+		</entry>
+		</map>
+	</property>
+
+</bean>
+
+
+</beans>
